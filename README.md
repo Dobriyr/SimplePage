@@ -7,4 +7,4 @@ This project should show my knowledge of Html+css/sass basics and understating o
 
 BlockLayout - just layout a page on block
 FlexboxLayout - layout on flexbox + adding  responsive design.
-GridLayout - layout on grid + using mobile first approach.
+GridLayout - layout on grid + using mobile first approach + scss.
