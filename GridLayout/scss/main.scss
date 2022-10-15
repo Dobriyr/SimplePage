@@ -1,0 +1,410 @@
+@import "_zeroing";
+
+$OurWorkColor: #de2b24;
+$FacebookAnalysisColor: #1287bf;
+$MyLightGrey: #828282;
+$FooterColor: #515151;
+$TextGrey: #cecece;
+$GetInTouchColor: #2a2a2a;
+
+.wraper{
+	font-family: "Raleway",sans-serif;
+	min-height: 100%;
+	display: grid;
+	grid-template: minmax(870px,auto) minmax(850px,auto) minmax(490px,auto) minmax(70px, auto) /1fr;
+}
+
+
+
+.OurWork{
+	background-color: $OurWorkColor;
+	padding: 5px;
+	display: grid;
+	justify-items: center;
+
+	grid-template: minmax(100px, auto) minmax(36px,auto) minmax(42px, auto) minmax(50px,auto) minmax(508px, auto) minmax(130px, auto) / 1fr minmax(auto, 1024px) 1fr;
+
+	&__element{
+		grid-column: 2/3;
+	}
+
+	&__title{
+		grid-row: 2/3;
+		font-size: 36px;
+		align-self: end;
+	
+	}
+	
+	&__subtitle {
+		grid-row: 3/4;
+		font-size: 20px;
+		align-self: start;
+	}
+	
+	&__subtitle::after {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 4px;
+		background: #fff;
+		margin: 18px auto 0;
+	}
+
+	&__container{
+		grid-row: 5/6;
+		display: grid;
+		width: fit-content;
+		justify-items: center;
+		grid-template-columns: repeat(1, minmax(254px,1fr));
+		//grid-template: repeat(auto-fill,minmax(508px,1fr)) / repeat(4, minmax(254px,1fr));
+	
+		
+	}
+	&__container_row{
+		display: grid;
+		grid-template-rows: 254px 254px;
+		max-width:fit-content;
+	}
+
+	&__info{
+
+		overflow: hidden;
+		height: 254px;
+		width: 254px;
+	
+		position: relative;
+
+		background-color: #f35e59;
+	}
+	&__info>img{
+		position:inherit;
+	}
+
+
+	&__infoContainer{
+		height: 100%;
+		width: 100%;
+		justify-items: center;
+		
+		display: grid;
+		grid-template: 1fr 37px 20px minmax(24px,auto) minmax(20px,auto) 1fr/1fr;
+	}
+
+	&__infoContainer_img{
+		grid-row:2/3;
+	}
+	
+	&__infoContainer_title {
+		grid-row: 4/5;
+		font-size: 26px;
+	}
+	
+	&__infoContainer_subtitle {
+		grid-row: 5/6;
+		font-size: 16px;
+	}
+}
+
+		@media (min-width:600px) {
+			.OurWork__container{
+				grid-template-columns: repeat(2, minmax(254px, 1fr));
+			}
+		}
+
+		@media (min-width:1200px) {
+			.OurWork__container{
+				grid-template-columns: repeat(4, minmax(254px, 1fr));
+			}
+			.OurWork__info_top{
+				grid-row:1/2;
+			}
+		}
+
+
+.FacebookAnalysis{
+	padding: 30px;
+	display: grid;
+	justify-items: center;
+	grid-template: minmax(100px, auto) minmax(30px, auto) minmax(14px, auto)   minmax(66px, auto) minmax(480px, auto) minmax(115px, auto) /  1fr minmax(auto, 683px) 1fr;
+
+	background-color: $FacebookAnalysisColor;
+
+&__element{
+	grid-column: 2/3;
+}
+
+	&__title {
+		text-align: center;
+		grid-row: 2/3;
+		font-size: 36px;
+	}
+			
+	&__subtitle {
+		margin-top:5px;
+		grid-row: 3/4;
+		font-size: 20px;
+	}
+
+		&__buttonimg {
+			grid-row:4/5;
+			border: 3px solid #fff;
+			border-radius: 50%;
+			height: 65px;
+			width: 65px;
+			margin: 20px auto 0;
+		}
+	
+		&__buttonimg-1 {
+			width: 21px;
+			height: 21px;
+			border-top: 3px solid #fff;
+			border-right: 3px solid #fff;
+			margin: 16px auto;
+		}
+	
+		&__buttonimg-1 {
+			-webkit-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+
+				&__formContainer {
+					margin-top: 50px;
+					grid-row :5/6;
+					background-color: #fff;
+					width: 100%;
+					height: 90%;
+					position: relative;
+
+					display: grid;
+					grid-template: 50px minmax(40px,auto) 30px minmax(250px,auto) 70px/ minmax(20px,auto) minmax(auto,550px) minmax(20px,auto);
+				}
+
+				&__formContainer_element{
+					grid-column: 2/3;
+				}
+		
+				&__formContainer::after {
+					content: "";
+					width: 0;
+					height: 0;
+					display: block;
+					position: absolute;
+					border: 0;
+		
+					border-left: 30px solid transparent;
+					border-right: 30px solid transparent;
+					margin-left: -30px;
+					left: 50%;
+					border-bottom: 30px solid #fff;
+					top: -30px;
+				}
+		
+				&__exitButton {
+					position: absolute;
+					right: 0 - 50px/2;
+					top: 0 - 50px/2;
+					height: 50px;
+					width: 50px;
+					border-radius: 50%;
+					font-size: 24px;
+				}
+		
+				& button {
+					background-color: $OurWorkColor;
+					color: #fff;
+					border: 2px solid #fff;
+				}
+		
+				
+		
+				&__formText {	
+					grid-row: 2/3;
+					font-size: 14px;
+					color: $MyLightGrey;
+					text-align: center;
+				}
+		
+				&__form{
+					grid-row:4/5;
+					display: grid;
+					grid-template:175px 50px/1fr;
+					align-content: space-between;
+
+				}
+				
+				&__inputContainer input {
+					border-radius: 2px;
+					border: 1px solid $MyLightGrey;
+					display: block;
+					height: 50px;
+					max-width: 440px;
+					width: 100%;
+					margin: 7px auto;
+				}
+		
+				&__inputContainer input:last-child {
+					margin-bottom: 0px;
+				}
+		
+				&__inputContainer input:focus {
+					border: none;
+					margin-bottom: 0px;
+					outline: 2px solid $FacebookAnalysisColor;
+					box-shadow: 20px $FacebookAnalysisColor; //?????
+				}
+		
+				&__submitButton {
+					border-radius: 4px;
+					height: 45px;
+					width: 100%;
+					max-width: 160px;
+					justify-self: center;
+				}
+
+}
+
+.GetInTouch{
+	padding: 30px;
+	background-color: $GetInTouchColor;
+	color:yellow;
+
+	display: grid;
+	grid-template: 90px minmax(25px,auto) minmax(50px,auto) minmax(25px,auto) minmax(auto,135px) 80px/ 1fr minmax(auto, 683px) 1fr;
+	text-align: center;
+	row-gap: 30px;
+
+	&__element{
+		grid-column:2/3;
+	}
+	&__title {
+		grid-row: 2/3;
+		font-size: 29px;
+ 	}
+
+	&__row {
+		grid-row: 3/4;
+		display:grid;
+		grid-auto-columns: minmax(50px,auto);
+		grid-auto-flow: column;
+		justify-content: center;
+		column-gap: 18px;
+	}
+
+	&__row a {
+		border-radius: 3px;
+		float: left;
+		height: 50px;
+		width: 50px;
+		border: 2px solid $FooterColor;
+	}		
+	&__row a:nth-child(1) {
+		background: url(../../resources/icon8.png) no-repeat;
+		background-position: center;
+	}
+	&__row a:nth-child(2) {
+		background: url(../../resources/icon9.png) no-repeat;
+		background-position: center;
+	}
+	&__row a:nth-child(3) {
+		background: url(../../resources/icon10.png) no-repeat;
+		background-position: center;
+	}
+	&__row a:nth-child(4) {
+		background: url(../../resources/icon11.png) no-repeat;
+		background-position: center;
+	}
+
+	&__subtitle {
+		grid-row: 4/5;
+		font-size: 14px;
+		color: $TextGrey;
+	}
+
+	&__input {
+		height: 55px;
+		width: 100%;
+		background-color: $FooterColor;
+		border: none;
+		color: white;
+	}
+
+		&__input:focus {
+		outline: none;
+	}
+	 
+	&__button {
+		justify-self: center;
+		border-radius: 4px;
+		color: #fff;
+		height: 50px;
+		width: 150px;
+		background-color: $GetInTouchColor;
+		border: 2px solid $FooterColor;
+	}
+	&__form{
+		grid-row: 5/6;
+		display: grid;
+		grid-template: 60px 50px/1fr;
+		align-content: space-between;
+	}
+	&-redBorder:hover {
+		border-color: $OurWorkColor;
+		cursor: pointer;
+	}
+	
+	&-redBorder a:hover {
+		border-color: $OurWorkColor;
+		cursor: pointer;
+	}
+}
+
+.footer{
+	display: grid;
+	text-align: center;
+	background-color: $FooterColor;
+	&__text {
+			font-weight: 14px;
+			margin: 20px;
+			color: $TextGrey;
+		}
+}
+
+
+.title {
+	line-height: 1;
+	color: white;
+}
+.subtitle {
+		line-height: 1;	
+	color: white;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.input {
+	padding-left: 20px;
+}
+
+#img-1 {
+	left: -150px;
+	min-width: 170%;
+}
+
+#img-2 {
+	left: -80px;
+	min-width: 175%;
+}
+
+#img-3 {
+	left: -90px;
+	min-width: 170%;
+	min-height: 120%;
+}
+
+#img-4 {
+	left: -50%;
+	min-height: -150%;
+	min-width: 200%;
+}
