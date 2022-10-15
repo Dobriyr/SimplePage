@@ -1,0 +1,425 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+article>*+* {
+	margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+}
+
+.OurWork {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #de2b24;
+	min-height: 120vh;
+	min-height: 865px;
+	width: 100%;
+	padding: 0 30px;
+}
+
+.OurWork__container {
+	margin: 110px auto 120px;
+	max-width: 1024px;
+}
+
+.OurWork__title {
+	font-size: 36px;
+}
+
+.OurWork__subtitle {
+	font-size: 20px;
+}
+
+.OurWork__subtitle::after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 4px;
+	background: #fff;
+	margin: 18px auto 40px auto;
+}
+
+.OurWork__row_container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.OurWork__row {
+	height: 254px;
+	width: 100%;
+}
+
+.OurWork__info {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	min-height: 254px;
+	min-width: 254px;
+	background-color: #f35e59;
+}
+
+.OurWork__info>img {
+	position: absolute;
+}
+
+.OurWork__infoContainer {
+	height: 110px;
+	max-width: 170px;
+	margin: 70px auto;
+}
+
+.OurWork__infoContainer img {
+	display: inline-block;
+	margin: 0 auto 20px;
+}
+
+.OurWork__InfoTitle {
+	font-size: 26px;
+}
+
+.OurWork__infoSubtitle {
+	font-size: 16px;
+}
+
+.FacebookAnalysis {
+	background-color: #1287bf;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 120vh;
+	min-height: 850px;
+	width: 100%;
+	padding: 0 30px;
+}
+
+.FacebookAnalysis__container {
+	margin: 100px auto 110px;
+	max-width: 684px;
+	height: 650px;
+}
+
+.FacebookAnalysis__title {
+	font-size: 36px;
+}
+
+.FacebookAnalysis__subtitle {
+	font-size: 20px;
+}
+
+.FacebookAnalysis__buttonimg {
+	border: 3px solid #fff;
+	border-radius: 50%;
+	height: 65px;
+	width: 65px;
+	margin: 20px auto 0;
+}
+
+.FacebookAnalysis__buttonimg-1 {
+	width: 21px;
+	height: 21px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	margin: 16px auto;
+}
+
+.FacebookAnalysis__buttonimg-1 {
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.FacebookAnalysis__formContainer {
+	margin-top: 48px;
+	display: inline-block;
+	background-color: #fff;
+	width: 100%;
+	height: 456px;
+	position: relative;
+}
+
+.FacebookAnalysis__formContainer::after {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	border: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	margin-left: -30px;
+	left: 50%;
+	border-bottom: 30px solid #fff;
+	top: -30px;
+}
+
+.FacebookAnalysis__exitButton {
+	position: absolute;
+	right: -25px;
+	top: -25px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	font-size: 24px;
+}
+
+.FacebookAnalysis button {
+	background-color: #de2b24;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.FacebookAnalysis__form {
+	margin: 50px auto 70px;
+	max-width: 585px;
+	max-height: 340px;
+}
+
+.FacebookAnalysis__formText {
+	font-size: 14px;
+	color: #828282;
+}
+
+.FacebookAnalysis__inputContainer {
+	margin: 40px auto;
+	padding: 0 25px;
+}
+
+.FacebookAnalysis__inputContainer input {
+	border-radius: 2px;
+	border: 1px solid #828282;
+	display: block;
+	height: 50px;
+	max-width: 440px;
+	width: 100%;
+	margin: 10px auto 0px;
+}
+
+.FacebookAnalysis__inputContainer input:last-child {
+	margin-bottom: 0px;
+}
+
+.FacebookAnalysis__inputContainer input:focus {
+	border: none;
+	margin-bottom: 0px;
+	outline: 2px solid #1287bf;
+	-webkit-box-shadow: 20px #1287bf;
+	box-shadow: 20px #1287bf;
+}
+
+.FacebookAnalysis__submitButton {
+	border-radius: 4px;
+	height: 45px;
+	width: 100%;
+	max-width: 160px;
+}
+
+.GetInTouch {
+	display: inline-block;
+	width: 100%;
+	background-color: #2a2a2a;
+	height: 60vh;
+	padding: 0 30px;
+	min-height: 490px;
+}
+
+.GetInTouch__container {
+	margin: 90px auto 85px;
+	max-width: 690px;
+	height: 35 0px;
+}
+
+.GetInTouch__title {
+	font-size: 29px;
+}
+
+.GetInTouch__row {
+	margin: 30px auto 35px;
+	width: 260px;
+	height: 50px;
+}
+
+.GetInTouch__row a {
+	border-radius: 3px;
+	margin-right: 18px;
+	float: left;
+	height: 50px;
+	width: 50px;
+	border: 2px solid #515151;
+}
+
+.GetInTouch__row a:last-child {
+	margin-right: 0px;
+}
+
+.GetInTouch__row a:nth-child(1) {
+	background: url(../../resources/icon8.png) no-repeat;
+	background-position: center;
+}
+
+.GetInTouch__row a:nth-child(2) {
+	background: url(../../resources/icon9.png) no-repeat;
+	background-position: center;
+}
+
+.GetInTouch__row a:nth-child(3) {
+	background: url(../../resources/icon10.png) no-repeat;
+	background-position: center;
+}
+
+.GetInTouch__row a:nth-child(4) {
+	background: url(../../resources/icon11.png) no-repeat;
+	background-position: center;
+}
+
+.GetInTouch__subtitle {
+	font-size: 14px;
+	color: #cecece;
+}
+
+.GetInTouch__input {
+	margin: 30px auto;
+	height: 55px;
+	width: 100%;
+	background-color: #515151;
+	border: none;
+	color: white;
+}
+
+.GetInTouch__input:focus {
+	outline: none;
+}
+
+.GetInTouch__button {
+	border-radius: 4px;
+	color: #fff;
+	height: 50px;
+	width: 150px;
+	background-color: #2a2a2a;
+	border: 2px solid #515151;
+}
+
+.GetInTouch-redBorder:hover {
+	border-color: #de2b24;
+	cursor: pointer;
+}
+
+.GetInTouch-redBorder a:hover {
+	border-color: #de2b24;
+	cursor: pointer;
+}
+
+.footer {
+	display: inline-block;
+	width: 100%;
+	background-color: #515151;
+	height: 65px;
+}
+
+.footer__text {
+	font-weight: 14px;
+	margin: 20px;
+	color: #cecece;
+}
+
+.input {
+	padding-left: 20px;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.title {
+	color: white;
+	line-height: 1;
+}
+
+.subtitle {
+	color: white;
+	line-height: 1;
+}
+
+#img-1 {
+	left: -150px;
+	min-width: 170%;
+}
+
+#img-2 {
+	left: -80px;
+	min-width: 175%;
+}
+
+#img-3 {
+	left: -90px;
+	min-width: 170%;
+	min-height: 120%;
+}
+
+#img-4 {
+	left: -50%;
+	min-height: -150%;
+	min-width: 200%;
+}
